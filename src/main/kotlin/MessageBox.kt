@@ -4,6 +4,10 @@ import java.util.concurrent.locks.Condition
 import java.util.concurrent.locks.Lock
 import java.util.concurrent.locks.ReentrantLock
 
+/**
+ * EXAME PC 2021V_1
+ */
+
 class MessageBox<T : Any> {
     private val lock: Lock = ReentrantLock()
     private val msgBox: MutableList<Box?> = LinkedList<Box?>()

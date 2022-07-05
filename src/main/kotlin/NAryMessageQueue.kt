@@ -5,6 +5,9 @@ import java.util.concurrent.locks.Condition
 import java.util.concurrent.locks.Lock
 import java.util.concurrent.locks.ReentrantLock
 
+/**
+ * EXAME PC 2021V_2
+ */
 class NAryMessageQueue<T> {
     private val messages: MutableList<T>
     private val lock: Lock = ReentrantLock()

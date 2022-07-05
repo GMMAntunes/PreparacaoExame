@@ -3,6 +3,10 @@ import java.util.concurrent.TimeUnit
 import java.util.concurrent.locks.Lock
 import java.util.concurrent.locks.ReentrantLock
 
+/**
+ * EXAME PC 2021V_2
+ */
+
 class BatchExchanger<T>(private val batchSize: Int) {
     private val lock: Lock = ReentrantLock()
     private val messages: MutableList<T> = LinkedList()
